@@ -83,7 +83,8 @@
         ]
     },
     "conflict": {
-        "symfony/symfony": "*"
+        "symfony/symfony": "*",
+        "composer/composer": "~2.2"
     },
     "extra": {
         "symfony": {
