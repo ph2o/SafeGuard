@@ -38,7 +38,7 @@ jobs:
       - name: Symfony CLI
         run: |
             curl -sS https://get.symfony.com/cli/installer | bash
-            mv /home/runner/.symfony/bin/symfony /usr/local/bin/symfony
+            mv /home/runner/symfony/bin/symfony /usr/local/bin/symfony
         
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
