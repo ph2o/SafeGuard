@@ -84,11 +84,11 @@ jobs:
 
       # Lint paraméters and containers files
       - name: Lint Parameters and Services
-        run: ./bin/console lint:container --no-debug
+        run: symfony console lint:container --no-debug
 
       # Lint Doctrines files
       - name: Lint Doctrine entities
-        run: ./bin/console doctrine:schema:validate --skip-sync -vvv --no-interaction
+        run: symfony console doctrine:schema:validate --skip-sync -vvv --no-interaction
 
       # Run Unit tests
       - name: PHP Unit
