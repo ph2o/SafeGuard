@@ -76,11 +76,11 @@ jobs:
 
       # Lint YAML files
       - name: Lint YAML files
-        run: ./bin/console lint:yaml config --parse-tags
+        run: symfony console lint:yaml config --parse-tags
 
       # Lint TWIG files
       - name: Lint Twig templates
-        run: ./bin/console lint:twig templates --env=prod
+        run: symfony console lint:twig templates --env=prod
 
       # Lint paraméters and containers files
       - name: Lint Parameters and Services
